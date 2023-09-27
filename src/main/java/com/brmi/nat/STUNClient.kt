@@ -1,12 +1,14 @@
 package com.brmi.nat
 
-import java.net.*
+import java.net.DatagramPacket
+import java.net.DatagramSocket
+import java.net.InetAddress
+import java.net.SocketException
 import java.util.Random
 
 class STUNClient {
 
-    private val SOURCE_IP = "0.0.0.0"
-    private val SOURCE_PORT = 54321
+    private val SOURCE_PORT = 54320
 
     private val STUN_IP = "stun.ekiga.net"
     private val STUN_PORT = 3478
